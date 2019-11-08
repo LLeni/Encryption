@@ -20,7 +20,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Encryption" target="8" />
+      <module name="Encryption" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
