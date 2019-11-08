@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane fx:id ="anchorPane" prefHeight="500" prefWidth="800" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="buttonEncrypt" layoutX="319.0" layoutY="234.0" mnemonicParsing="false" onAction="#encryptFile" prefHeight="25.0" prefWidth="157.0" text="Шифровать" />
+      <Button fx:id="buttonChoose" layoutX="14.0" layoutY="458.0" mnemonicParsing="false" onAction="#chooseFile" prefHeight="25.0" prefWidth="300.0" text="Выбрать файл" />
+      <TextField fx:id="fieldKey" layoutX="319.0" layoutY="209.0" prefHeight="25.0" prefWidth="157.0" promptText="Введите сюда ключ" />
+      <Label layoutX="319.0" layoutY="192.0" text="Ключ" />
+      <TextArea fx:id="contentInitialFile" editable="false" layoutX="14.0" layoutY="44.0" prefHeight="413.0" prefWidth="300.0" />
+      <Label layoutX="14.0" layoutY="26.0" text="Содержание файла" />
+      <TextArea fx:id="contentEncryptFile" editable="false" layoutX="480.0" layoutY="44.0" prefHeight="413.0" prefWidth="300.0" />
+      <Button fx:id="buttonSave" layoutX="480.0" layoutY="454.0" mnemonicParsing="false" onAction="#saveFile" prefHeight="25.0" prefWidth="300.0" text="Сохранить" />
+      <Label layoutX="480.0" layoutY="26.0" text="Содержание зашифрованного файла" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#969a9e" height="6.0" layoutX="314.0" layoutY="265.0" opacity="0.56" stroke="BLACK" strokeType="INSIDE" width="166.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#969a9e" height="6.0" layoutX="314.0" layoutY="186.0" opacity="0.56" stroke="BLACK" strokeType="INSIDE" width="166.0" />
+      <TextArea editable="false" layoutX="324.0" layoutY="293.0" prefHeight="115.0" prefWidth="148.0" promptText="3434" text="Руководство:&#10;1 Выберите файл&#10;2 Введите ключ&#10;3 Зашифруйте файл&#10;4 Сохраните " />
+   </children>
+</AnchorPane>
