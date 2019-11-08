@@ -126,7 +126,8 @@ public class Controller {
 
     private void openFile(File file) {
         String content = "";
-        try (Scanner scanner = new Scanner(file)) {
+
+        try (Scanner scanner = new Scanner(file, "UTF-8")) {
             while (scanner.hasNext()) {
                 content += scanner.nextLine() + "\n";
             }
